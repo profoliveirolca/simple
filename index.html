@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao JavaScript e Projeto Integrado com HTML</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Importa o arquivo de CSS -->
+</head>
+<body>
+
+    <header>
+        <h1>Introdução ao JavaScript e Projeto Integrado com HTML</h1>
+    </header>
+
+    <section class="content">
+        <h2>1. Introdução ao JavaScript</h2>
+        <p>JavaScript é uma linguagem de programação usada principalmente para criar interatividade nas páginas web.</p>
+        <p>Ela permite que você adicione funcionalidades dinâmicas ao seu site, como responder a eventos de usuário, modificar conteúdo, validar formulários, e muito mais. O JavaScript roda no navegador do usuário, tornando a experiência de uso rápida e responsiva.</p>
+        <p>Neste guia, você aprenderá o básico do JavaScript e como integrá-lo a uma página HTML.</p>
+
+        <h2>2. Como Integrar JavaScript ao HTML</h2>
+        <p>Para usar JavaScript em uma página HTML, você pode inserir o código JavaScript dentro de uma tag <code>&lt;script&gt;</code> diretamente no arquivo HTML ou em um arquivo separado com extensão .js, que é referenciado no HTML.</p>
+
+        <h3>Exemplo de código HTML com JavaScript integrado:</h3>
+        <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Projeto JavaScript&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Olá, JavaScript!&lt;/h1&gt;
+    &lt;button onclick="mostrarMensagem()"&gt;Clique em mim&lt;/button&gt;
+
+    &lt;script&gt;
+    function mostrarMensagem() {
+        alert('Você clicou no botão!');
+    }
+    &lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+
+        <h2>3. Explicação do Código</h2>
+        <p>Neste exemplo simples, usamos JavaScript para exibir uma mensagem de alerta quando o usuário clica no botão. A função <code>mostrarMensagem()</code> é definida dentro da tag <code>&lt;script&gt;</code>, e é chamada quando o botão é clicado, graças ao atributo <code>onclick</code> do botão.</p>
+        <ul>
+            <li><code>&lt;button onclick="mostrarMensagem()"&gt;</code>: Adiciona um botão que chama a função JavaScript ao ser clicado.</li>
+            <li><code>function mostrarMensagem() { ... }</code>: Define a função que exibe um alerta com uma mensagem.</li>
+        </ul>
+
+        <h2>4. Próximos Passos</h2>
+        <p>Para aprender mais, você pode explorar outros eventos e interações com o JavaScript, como manipulação de elementos do DOM (Document Object Model) e criação de funcionalidades mais avançadas.</p>
+        <p>Com prática, você entenderá melhor como o JavaScript pode criar experiências interativas nas suas páginas web.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Tutorial JavaScript</p>
+    </footer>
+
+</body>
+</html>
